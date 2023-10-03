@@ -1,5 +1,5 @@
 export { match, main, del, description }
-const { findInfo, generateHeader } = await import(chrome.runtime.getURL("storage-utilities.js"));
+const { findInfo, generateHeader } = await import(chrome.runtime.getURL("utilities/storage-utilities.js"));
 
 const description = "Adds a delete button 🗑️ to the files and folders in the browse menu.";
 

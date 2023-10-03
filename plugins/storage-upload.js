@@ -1,5 +1,5 @@
 export { match, main, upload, description }
-const { findInfo, generateHeader } = await import(chrome.runtime.getURL("storage-utilities.js"));
+const { findInfo, generateHeader } = await import(chrome.runtime.getURL("utilities/storage-utilities.js"));
 
 const description = "Adds a file upload field to the browse menu.";
 

@@ -58,7 +58,7 @@
         "plugins/storage-duplicate.js",
         "plugins/storage-rename.js",
 
-        "storage-utilities.js"
+        "utilities/storage-utilities.js"
       ]
     }
   ]

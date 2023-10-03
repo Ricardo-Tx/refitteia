@@ -1,5 +1,4 @@
 export { match, main, description }
-// const { findInfo, generateHeader } = await import(chrome.runtime.getURL("storage-utilities.js"));
 const { upload } = await import(chrome.runtime.getURL("plugins/storage-upload.js"));
 
 const description = "Adds a duplicate button 📑 to the files in the browse menu.";
