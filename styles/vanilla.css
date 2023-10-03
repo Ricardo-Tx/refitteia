@@ -1,0 +1,88 @@
+a:active {
+    color: #3333ff;
+}
+a:visited {
+    color: #4444ff;
+}
+a:link {
+    color: #aaaaff;
+}
+
+body {
+    font-family: monospace;
+    color: #ffffff;
+    background-color: #111111;
+}
+
+textarea {
+    background-color: #222222;
+    color: #cccccc;
+    outline: none;
+}
+
+input[type=text] {
+    background-color: #222222;
+    color: #cccccc;
+    outline: none;
+    border-style: solid;
+    border-width: 1px;
+}
+
+input[type="submit"] {
+    background-color: #666666;
+    color: #dddddd;
+    outline: none;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #888888;
+    font-family: verdana;
+}
+
+button {
+    background-color: #666666;
+    color: #dddddd;
+    outline: none;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #888888;
+    font-family: verdana;
+}
+
+input[type="number"] {
+    background-color: #222222;
+    color: #cccccc;
+    outline: none;
+    border-style: solid;
+    border-width: 1px;
+    font-family: courier;
+}
+
+select {
+    background-color: #444444;
+    color: #dddddd;
+    outline: none;
+    border-style: solid;
+    border-width: 1px;
+    font-family: monospace;
+}
+
+a[href] {
+    text-decoration: none;
+}
+
+.storage-full-text {
+    color: #990000;
+    font-size: 14px;
+    font-weight: bolder;
+    font-style: italic;
+}
+
+.color-swatch {
+    appearance: none;
+	padding-right: 18px;
+	padding-top: 0px;
+	padding-bottom: 1px;
+	border-style: solid;
+	border-width: 1px;
+	outline: none;
+}

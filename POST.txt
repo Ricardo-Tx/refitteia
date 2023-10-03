@@ -1,0 +1,103 @@
+ShareEmail: 
+Selected: ./fit/data.tex
+Email: ricardo.a.teixeira@tecnico.ulisboa.pt
+Projecto: E1-Stirling
+Link: 33EATAuoBzEWY95oNdvnGBbg2cri2ZFshxhHTJgri9MGNlX7mMHo
+continue: Delete Selected
+.cgifields: Selected
+
+
+///////////////
+
+ShareEmail: 
+Selected: ./fit/plt.agr
+Selected: ./fit/data.dat
+Email: ricardo.a.teixeira@tecnico.ulisboa.pt
+Projecto: E1-Stirling
+Link: 33EATAuoBzEWY95oNdvnGBbg2cri2ZFshxhHTJgri9MGNlX7mMHo
+continue: Delete Selected
+.cgifields: Selected
+
+
+///////////////
+
+ShareEmail: 
+Selected: ./fit/pltdata1.dat
+Selected: ./fit/gnu0.dat
+Selected: ./fit/fit-gph-1.agr
+Selected: ./fit/data2.dat
+Selected: ./fit/data1.dat
+Selected: ./fit/data.tex
+Email: ricardo.a.teixeira@tecnico.ulisboa.pt
+Projecto: E1-Stirling
+Link: 44brV.NzFRCe619WOsbp8DRyXsriSakEec0PshYri9MGNlX7mMHo
+continue: Delete Selected
+.cgifields: Selected
+
+
+
+/////////////////////////
+
+ShareEmail: 
+Selected: ./fit/pltdata1.dat
+Selected: ./fit/gnu0.dat
+Selected: ./fit/fit-gph-1.agr
+Selected: ./fit/data2.dat
+Selected: ./fit/data1.dat
+Selected: ./fit/data.tex
+Email: ricardo.a.teixeira@tecnico.ulisboa.pt
+Projecto: E1-Stirling
+Link: 44brV.NzFRCe619WOsbp8DRyXsriSakEec0PshYri9MGNlX7mMHo
+continue: Delete Selected
+.cgifields: Selected
+
+
+//////////////////////
+
+ShareEmail: 
+Selected: ./fit/file_name.sav
+Email: ricardo.a.teixeira@tecnico.ulisboa.pt
+Projecto: Delete
+Link: 32ofIQB0PFKxE19WOsbp8DRyXsriSakEec0PshYri9MGNlX7mMHo
+continue: Delete Selected
+.cgifields: Selected
+
+
+
+
+//////////////////////////
+
+
+fetch("http://fitteia-t.vps.tecnico.ulisboa.pt/cgi-bin/upload1", {
+  "headers": {
+    "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "accept-language": "pt-PT,pt;q=0.9,en-US;q=0.8,en;q=0.7",
+    "cache-control": "max-age=0",
+    "content-type": "multipart/form-data; boundary=----WebKitFormBoundaryvhjaDb5La6DHiCob",
+    "upgrade-insecure-requests": "1"
+  },
+  "referrer": "http://fitteia-t.vps.tecnico.ulisboa.pt/cgi-bin/upload1?Nome=ricardo.a.teixeira@tecnico.ulisboa.pt&Projecto=Delete&Type=fit",
+  "referrerPolicy": "strict-origin-when-cross-origin",
+  "body": "------WebKitFormBoundaryvhjaDb5La6DHiCob\r\n
+  Content-Disposition: form-data; name=\"Nome\"\r\n
+  \r\n
+  ricardo.a.teixeira@tecnico.ulisboa.pt\r\n
+  ------WebKitFormBoundaryvhjaDb5La6DHiCob\r\n
+  Content-Disposition: form-data; name=\"Projecto\"\r\n
+  \r\n
+  Delete\r\n
+  ------WebKitFormBoundaryvhjaDb5La6DHiCob\r\n
+  Content-Disposition: form-data; name=\"submit\"\r\n
+  \r\n
+  Upload\r\n
+  ------WebKitFormBoundaryvhjaDb5La6DHiCob\r\n
+  Content-Disposition: form-data; name=\"UploadFile\"; filename=\"Forc&#807;a Regressa&#771;o linear.xlsx\"\r\n
+  Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet\r\n\
+  r\n
+  \r\n
+  ------WebKitFormBoundaryvhjaDb5La6DHiCob--\r\n
+  ",
+  "method": "POST",
+  "mode": "cors",
+  "credentials": "include"
+});

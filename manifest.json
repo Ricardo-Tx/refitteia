@@ -1,0 +1,65 @@
+{
+  "manifest_version": 3,
+  "name": "ReFitteia",
+  "version": "0.1.1",
+  
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "storage"
+  ],
+
+  "action": {
+    "default_title": "ReFitteia",
+    "default_popup": "popup.html"
+  },
+  
+  "content_scripts": [
+      {
+        "js": [
+          "main.js"
+        ],
+        "matches": [
+            "*://fitteia-t.vps.tecnico.ulisboa.pt/*", 
+            "*://fitteia-a.vps.tecnico.ulisboa.pt/*"
+        ]
+      }
+    ],
+
+    "web_accessible_resources": [{
+      "matches": [
+        "*://fitteia-t.vps.tecnico.ulisboa.pt/*", 
+        "*://fitteia-a.vps.tecnico.ulisboa.pt/*"
+      ],
+      "resources": [
+        "styles/dark-style.css",
+        "styles/tooltip.css",
+
+        "plugins/theme.js",
+        "plugins/font-recolor.js",
+        "plugins/remove-public-ip.js",
+        "plugins/chi-spacing.js",
+        "plugins/disk-space.js",
+        "plugins/compile-message.js",
+        "plugins/textarea.js",
+        "plugins/binary-radio.js",
+        "plugins/binary-dropdown.js",
+        "plugins/integer-dropdown.js",
+        "plugins/option-table.js",
+        "plugins/text-input.js",
+        "plugins/folder-tree.js",
+        "plugins/number-tips.js",
+        "plugins/graphics-swatch.js",
+        "plugins/buttons.js",
+        "plugins/storage-upload.js",
+        "plugins/storage-delete.js",
+        "plugins/storage-folder.js",
+        "plugins/storage-download.js",
+        "plugins/storage-duplicate.js",
+        "plugins/storage-rename.js",
+
+        "storage-utilities.js"
+      ]
+    }
+  ]
+}
