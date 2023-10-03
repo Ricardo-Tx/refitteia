@@ -20,10 +20,12 @@ function main(pathname){
         }
 
         const btnRename = document.createElement('button');
-        btnRename.style.backgroundColor = "Transparent";
-        btnRename.style.width = "30px";
-        btnRename.style.height = "20px";
+        btnRename.className = "browse-button";
         btnRename.textContent = "✏️";
+
+        // btnRename.style.backgroundColor = "Transparent";
+        // btnRename.style.width = "30px";
+        // btnRename.style.height = "20px";
 
         btnRename.onclick = () => {
             const found = document.querySelector('input[type="text"]');

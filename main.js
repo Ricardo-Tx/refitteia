@@ -8,9 +8,9 @@
     // });
     // document.querySelector('head').appendChild(style);
 
-    chrome.runtime.onMessage.addListener((msg, sender, response) => {
-        console.log("MESSAGE: ", msg);
-    });
+    // chrome.runtime.onMessage.addListener((msg, sender, response) => {
+    //     console.log("MESSAGE: ", msg);
+    // });
 
     // const link2 = document.createElement('link');
     // link2.rel = "stylesheet";

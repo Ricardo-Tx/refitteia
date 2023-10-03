@@ -1,11 +1,10 @@
 {
   "manifest_version": 3,
   "name": "ReFitteia",
-  "version": "0.1.1",
+  "version": "0.3.2",
   
   "permissions": [
     "activeTab",
-    "tabs",
     "storage"
   ],
 
@@ -32,8 +31,8 @@
         "*://fitteia-a.vps.tecnico.ulisboa.pt/*"
       ],
       "resources": [
-        "styles/dark-style.css",
-        "styles/tooltip.css",
+        "styles/dark.css",
+        "styles/vanilla.css",
 
         "plugins/theme.js",
         "plugins/font-recolor.js",

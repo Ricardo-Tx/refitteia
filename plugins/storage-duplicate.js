@@ -17,10 +17,12 @@ function main(pathname){
         }
 
         const btnDuplicate = document.createElement('button');
-        btnDuplicate.style.backgroundColor = "Transparent";
-        btnDuplicate.style.width = "30px";
-        btnDuplicate.style.height = "20px";
+        btnDuplicate.className = "browse-button";
         btnDuplicate.textContent = "📑";
+
+        // btnDuplicate.style.backgroundColor = "Transparent";
+        // btnDuplicate.style.width = "30px";
+        // btnDuplicate.style.height = "20px";
 
         btnDuplicate.onclick = () => {
             (async () => {

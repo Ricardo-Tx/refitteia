@@ -1,19 +1,19 @@
 a:active {
-    color: #3333ff;
+    color: #ff0000;
 }
 a:visited {
-    color: #4444ff;
+    color: #660000;
 }
 a:link {
-    color: #aaaaff;
+    color: #cc0000;
 }
 
 body {
-    font-family: monospace;
-    color: #ffffff;
-    background-color: #111111;
+    font-family: serif;
+    color: #0000ff;
+    background-color: #f7f7df;
 }
-
+/*
 textarea {
     background-color: #222222;
     color: #cccccc;
@@ -65,7 +65,7 @@ select {
     border-width: 1px;
     font-family: monospace;
 }
-
+*/
 a[href] {
     text-decoration: none;
 }
@@ -85,4 +85,29 @@ a[href] {
 	border-style: solid;
 	border-width: 1px;
 	outline: none;
+}
+
+.important-text {
+    color : #000000;
+}
+
+.compile-ok {
+    color : #00bb00;
+}
+
+.compile-error {
+    color : #bb0000;
+}
+
+.browse-button {
+    background-color: #f7f7df;
+    width: 30px;
+    height: 20px;
+    outline: none;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.browse-button:hover {
+    background-color: #ccccb9;
 }

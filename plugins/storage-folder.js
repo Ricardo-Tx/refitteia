@@ -27,10 +27,12 @@ function main(pathname){
         // tooltip.setAttribute('class', "tooltip-text");
 
         const btnSize = document.createElement('button');
-        btnSize.style.backgroundColor = "Transparent";
-        btnSize.style.width = "30px";
-        btnSize.style.height = "20px";
+        btnSize.className = "browse-button";
         btnSize.textContent = "🔎";
+
+        // btnSize.style.backgroundColor = "Transparent";
+        // btnSize.style.width = "30px";
+        // btnSize.style.height = "20px";
 
         btnSize.onclick = () => {
             load(tr);

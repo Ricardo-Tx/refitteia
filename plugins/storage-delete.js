@@ -13,10 +13,11 @@ function main(pathname){
         }
     
         const btnDelete = document.createElement('button');
-        btnDelete.style.backgroundColor = "Transparent";
-        btnDelete.style.width = "30px";
-        btnDelete.style.height = "20px";
+        btnDelete.className = "browse-button";
         btnDelete.textContent = "🗑️";
+        // btnDelete.style.backgroundColor = "Transparent";
+        // btnDelete.style.width = "30px";
+        // btnDelete.style.height = "20px";
 
         btnDelete.onclick = () => {
             const dirCount = 7-(window.location.href.match(/\//g) || []).length;

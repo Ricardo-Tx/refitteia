@@ -26,7 +26,8 @@ function main(pathname, matchIndex){
                 continue;
             }
             //span.setAttribute("color", (i == 0) ? "#00ff00" : "#ff0000");
-            span.style.color = (i == 0) ? "#00ff00" : "#ff0000";
+            //span.style.color = (i == 0) ? "#00ff00" : "#ff0000";
+            span.className = (i == 0) ? "compile-ok" : "compile-error";
             span.textContent += (i == 0 ? " ✔" : " ✘");
             compileTextCheck = true;
             break;

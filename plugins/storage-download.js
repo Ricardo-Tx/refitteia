@@ -16,10 +16,11 @@ function main(pathname){
         }
 
         const btnDownload = document.createElement('button');
-        btnDownload.style.backgroundColor = "Transparent";
-        btnDownload.style.width = "30px";
-        btnDownload.style.height = "20px";
+        btnDownload.className = "browse-button";
         btnDownload.textContent = "💾";
+        // btnDownload.style.backgroundColor = "Transparent";
+        // btnDownload.style.width = "30px";
+        // btnDownload.style.height = "20px";
 
         btnDownload.onclick = () => {
             (async () => {

@@ -8,17 +8,17 @@ const match = [
 ];
 
 function main(pathname){
-    for(const btn of [
-        ...document.querySelectorAll('input[type="submit"]'), 
-        ...document.querySelectorAll('button')
-    ]){
-        if(btn.style.backgroundColor == "transparent"){
-            continue;
-        }
-        btn.onmousedown = () => { btn.style.backgroundColor = "#888888"; };
-        btn.onmouseup = () => { btn.style.backgroundColor = "#666666"; };
-        btn.onmouseleave = btn.onmouseup;
-    }
+    // for(const btn of [
+    //     ...document.querySelectorAll('input[type="submit"]'), 
+    //     ...document.querySelectorAll('button')
+    // ]){
+    //     if(btn.style.backgroundColor == "transparent"){
+    //         continue;
+    //     }
+    //     btn.onmousedown = () => { btn.style.backgroundColor = "#888888"; };
+    //     btn.onmouseup = () => { btn.style.backgroundColor = "#666666"; };
+    //     btn.onmouseleave = btn.onmouseup;
+    // }
 
 }
 

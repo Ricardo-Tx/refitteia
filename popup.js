@@ -56,8 +56,8 @@
                     obj[filename] = sel.options[sel.selectedIndex].value;
                     await chrome.storage.local.set(obj);
                     
-                    const [tab] = await chrome.tabs.query({active: true, lastFocusedWindow: true});
-                    await chrome.tabs.sendMessage(tab.id, obj);
+                    // const [tab] = await chrome.tabs.query({active: true, lastFocusedWindow: true});
+                    // await chrome.tabs.sendMessage(tab.id, obj);
                 })();
             };
         }

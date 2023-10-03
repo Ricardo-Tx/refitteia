@@ -38,6 +38,10 @@ input[type="submit"] {
     font-family: verdana;
 }
 
+input[type="submit"]:hover {
+    background-color: #888888;
+}
+
 button {
     background-color: #666666;
     color: #dddddd;
@@ -46,6 +50,10 @@ button {
     border-width: 1px;
     border-color: #888888;
     font-family: verdana;
+}
+
+button:hover {
+    background-color: #888888;
 }
 
 input[type="number"] {
@@ -89,4 +97,18 @@ a[href] {
 
 .important-text {
     color : #888888;
+}
+
+.compile-ok {
+    color : #00ff00;
+}
+
+.compile-error {
+    color : #ff0000;
+}
+
+.browse-button {
+    background-color: transparent;
+    width: 30px;
+    height: 20px;
 }
