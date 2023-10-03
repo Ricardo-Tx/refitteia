@@ -13,6 +13,8 @@ This extension aims to improve the user experience (UX) of the user, not only by
 All contributions are greatly appreciated, pull requests for improvements and reporting issues are more than welcome!
 
 # Citing
-[The art of model fitting to experimental results](https://iopscience.iop.org/article/10.1088/0143-0807/35/1/015017)
+["The art of model fitting to experimental results"](https://iopscience.iop.org/article/10.1088/0143-0807/35/1/015017)
+
 Pedro J Sebastião 2014 Eur. J. Phys. 35 015017
+
 DOI 10.1088/0143-0807/35/1/015017
