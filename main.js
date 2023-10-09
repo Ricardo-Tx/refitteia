@@ -34,6 +34,7 @@
 
         const src = chrome.runtime.getURL(file);
         const { match, main } = await import(src);
+        
         for(let i = 0; i < match.length; i++){
             const m = match[i];
             if(m instanceof RegExp && pathname.search(m) != -1){
@@ -48,6 +49,4 @@
             }
         }
     }
-
-    console.log(chrome.browserAction);
 })();

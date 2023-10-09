@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "ReFitteia",
-  "version": "0.3.2",
+  "version": "0.3.3",
   
   "permissions": [
     "activeTab",
@@ -36,6 +36,7 @@
 
         "plugins/theme.js",
         "plugins/font-recolor.js",
+        "plugins/separated-inputs.js",
         "plugins/remove-public-ip.js",
         "plugins/chi-spacing.js",
         "plugins/disk-space.js",
@@ -49,7 +50,6 @@
         "plugins/folder-tree.js",
         "plugins/number-tips.js",
         "plugins/graphics-swatch.js",
-        "plugins/buttons.js",
         "plugins/storage-upload.js",
         "plugins/storage-delete.js",
         "plugins/storage-folder.js",

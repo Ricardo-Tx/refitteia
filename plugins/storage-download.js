@@ -3,7 +3,7 @@ export { match, main, description }
 const description = "Adds a download button 💾 to the files in the browse menu.";
 
 const match = [
-    /^\/home\/.+/
+    /^\/home(\/[^\ ]+)\/[^\ \.]*$/
 ];
 function main(pathname){
     for(const tr of document.querySelector('tbody').children){

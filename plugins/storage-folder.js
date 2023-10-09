@@ -3,7 +3,7 @@ export { match, main, description }
 const description = "Adds a size button 🔎 to the folders in the browse menu and a helpful label.";
 
 const match = [
-    /^\/home\/.+/
+    /^\/home(\/[^\ ]+)\/[^\ \.]*$/
 ];
 function main(pathname){
     const meta = document.createElement('meta');

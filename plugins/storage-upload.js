@@ -4,7 +4,7 @@ const { findInfo, generateHeader } = await import(chrome.runtime.getURL("utiliti
 const description = "Adds a file upload field to the browse menu.";
 
 const match = [
-    /^\/home\/.+/
+    /^\/home(\/[^\ ]+)\/[^\ \.]*$/
 ];
 function main(pathname){
     // const dirCount = 5-(window.location.pathname.match(/\//g) || []).length;

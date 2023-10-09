@@ -1,13 +1,13 @@
 export { match, main, description }
 const { upload } = await import(chrome.runtime.getURL("plugins/storage-upload.js"));
 const { del } = await import(chrome.runtime.getURL("plugins/storage-delete.js"));
-const { findInfo } = await import(chrome.runtime.getURL("storage-utilities.js"));
+const { findInfo } = await import(chrome.runtime.getURL("utilities/storage-utilities.js"));
 
 const description = "Adds a rename button ✏️ to the files in the browse menu.";
 
 
 const match = [
-    /^\/home\/.+/
+    /^\/home(\/[^\ ]+)\/[^\ \.]*$/
 ];
 function main(pathname){
     for(const tr of document.querySelector('tbody').children){

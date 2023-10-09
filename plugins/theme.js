@@ -12,7 +12,6 @@ const match = [
 function main(pathname){
     (async () => {
         const res = await chrome.storage.local.get(["theme"]);
-        // console.log("THEME", res['theme']);
 
         const link = document.createElement('link');
         link.rel = "stylesheet";

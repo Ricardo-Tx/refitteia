@@ -6,9 +6,10 @@ const match = [
     /^\/cgi-bin/,
 ];
 function main(pathname){
-    const texts = document.querySelectorAll('input[type="text"]')
-    
-    for(const t of texts){
+    for(const t of document.querySelectorAll('input[type="text"]')){
+        t.setAttribute('spellcheck', false);
+
+
         t.style.fontFamily = isNaN(t.value.split('\\,')[0]) ? "monospace" : "courier";
         
         const unfocusCol = t.style.borderColor;

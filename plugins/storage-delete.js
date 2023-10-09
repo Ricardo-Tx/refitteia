@@ -4,7 +4,7 @@ const { findInfo, generateHeader } = await import(chrome.runtime.getURL("utiliti
 const description = "Adds a delete button 🗑️ to the files and folders in the browse menu.";
 
 const match = [
-    /^\/home\/.+/
+    /^\/home(\/[^\ ]+)\/[^\ \.]*$/
 ];
 function main(pathname){
     for(const tr of document.querySelector('tbody').children){

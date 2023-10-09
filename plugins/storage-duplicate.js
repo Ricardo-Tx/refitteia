@@ -4,7 +4,7 @@ const { upload } = await import(chrome.runtime.getURL("plugins/storage-upload.js
 const description = "Adds a duplicate button 📑 to the files in the browse menu.";
 
 const match = [
-    /^\/home\/.+/
+    /^\/home(\/[^\ ]+)\/[^\ \.]*$/
 ];
 function main(pathname){
     for(const tr of document.querySelector('tbody').children){
