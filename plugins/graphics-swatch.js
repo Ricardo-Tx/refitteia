@@ -32,18 +32,22 @@ function main(pathname){
         "<8-star>"
     ];
     const colors = [
-        "ffffff",
-        "000000",
-        "ff0000",
-        "00ff00",
-        "0000ff",
-        "ffff00",
+        "#ffffff",
+        "#000000",
+        "#ff0000",
+        "#00ff00",
+        "#0000ff",
+        "#ffff00",
         "#bc8f8f",
         "#dcdcdc",
-        "ff00ff",
-        "00ffff",
         "#9400d3",
-        "#00ffff"
+        "#00ffff",
+        "#ff00ff",
+        "#ffa500",
+        "#7221bc",
+        "#670748",
+        "#40e0d0",
+        "#008b00"
     ];
     const datasets = document.querySelector('input[name="NC"]')?.value;
     if(!datasets){
@@ -64,11 +68,19 @@ function main(pathname){
 
     function turnIntoColorSwatch(name){
         const sel = document.querySelector(`select[name="${name}"]`);
+
         for(const opt of sel.children){
             opt.style.backgroundColor = colors[opt.value];
             opt.textContent = "";
             //console.log(typeof(opt.value));
             //opt.value = String(Number(opt.value)-10);
+        }
+        for(let i = sel.childElementCount; i < colors.length; i++){
+            const opt = document.createElement('option');
+            //opt.textContent = colors[i];
+            opt.style.backgroundColor = colors[i];
+            opt.value = i;
+            sel.appendChild(opt);
         }
 
         sel.appendChild(sel.firstElementChild);

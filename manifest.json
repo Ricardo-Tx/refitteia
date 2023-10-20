@@ -56,6 +56,7 @@
         "plugins/storage-download.js",
         "plugins/storage-duplicate.js",
         "plugins/storage-rename.js",
+        "plugins/latex-to-grace.js",
 
         "utilities/storage-utilities.js"
       ]

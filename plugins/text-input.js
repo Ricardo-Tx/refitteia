@@ -5,6 +5,7 @@ const description = "Makes buttons more responsive.";
 const match = [
     /^\/cgi-bin/,
 ];
+
 function main(pathname){
     for(const t of document.querySelectorAll('input[type="text"]')){
         t.setAttribute('spellcheck', false);
